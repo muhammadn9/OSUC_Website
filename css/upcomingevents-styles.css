@@ -1,0 +1,296 @@
+:root {
+    --ou-primary-color: white; /* Oakland Green */
+    --ou-secondary-color: #000000; /* Black */
+    --ou-accent-color: #d7aa3f; /* Oakland Gold */
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: burlywood; /* Change to white for a cleaner look */
+  }
+  
+  .navbar {
+    background-color: var(--ou-primary-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .navbar .logo img {
+    margin-right: 20px;
+  }
+  
+  .navbar nav ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  .navbar nav li {
+    margin: 0 15px;
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    font-size: 18px;
+    transition: color 0.3s;
+  }
+  
+  .navbar a:hover {
+    color: var(--ou-accent-color);
+  }
+  
+  .search-bar input[type="text"] {
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+  }
+  
+  .content {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Styling for the widget sections */
+  .widget {
+    background-color: #dfa053; /* Use the accent color */
+    border: 1px solid white;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .widget h2 {
+    font-size: 20px;
+    margin: 0;
+    color: var(--ou-primary-color); /* Use the primary color for headings */
+  }
+  
+  .widget p {
+    font-size: 16px;
+  }
+  
+  .widget button {
+    background-color: var(--ou-primary-color);
+    color: black; /* Change the button text color to black */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .widget button:hover {
+    background-color: var(--ou-accent-color); /* Use the accent color on hover */
+  }
+  
+  .widget a {
+    color: var(--ou-accent-color); /* Use the accent color for links */
+    text-decoration: none;
+  }
+  
+  .widget a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Your existing CSS styles... */
+  
+  /* Styling for the widget container */
+  .widget-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Styling for the interactive widget sections */
+  .widget {
+    width: calc(50% - 20px); /* Two widgets side by side with spacing */
+    background-color: #dfa053; /* Use the accent color */
+    border: 1px solid white;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: transform 0.3s;
+    transform-style: preserve-3d;
+  }
+  
+  .widget:hover {
+    animation: flip 0.5s forwards;
+  }
+  
+  .widget-content {
+    transform: rotateY(0deg);
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    height: 100%;
+  }
+  
+  /* Define the flip animation */
+  @keyframes flip {
+    0% {
+      transform: rotateY(0deg);
+    }
+    100% {
+      transform: rotateY(180deg);
+    }
+  }
+  
+  /* Styling for the widget content on the back face */
+  .widget-content h2 {
+    font-size: 20px;
+    margin: 0;
+    color: var(--ou-primary-color); /* Use the primary color for headings */
+  }
+  
+  .widget-content p {
+    font-size: 16px;
+  }
+  
+  .widget-content button {
+    background-color: var(--ou-primary-color);
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .widget-content button:hover {
+    background-color: var(--ou-accent-color); /* Use the accent color on hover */
+  }
+  
+  .widget-content a {
+    color: var(--ou-accent-color); /* Use the accent color for links */
+    text-decoration: none;
+  }
+  
+  .widget-content a:hover {
+    text-decoration: underline;
+  }
+  /* Your existing CSS styles... */
+  
+  /* Styling for the widget container */
+  .widget-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Styling for the interactive widget sections */
+  .widget {
+    width: calc(50% - 20px); /* Two widgets side by side with spacing */
+    background-color: #dfa053; /* Use the accent color */
+    border: 1px solid white;
+    padding: 0; /* No padding here */
+    margin: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: transform 0.3s;
+    transform-style: preserve-3d;
+  }
+  
+  .widget:hover {
+    animation: flip 0.5s forwards;
+  }
+  
+  .widget-header {
+    background-color: /* var(--ou-primary-color);  Use primary color for header */
+    color: black;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .widget-header h2 {
+    margin: 0;
+    font-size: 20px;
+  }
+  
+  .widget-content {
+    transform: rotateY(0deg);
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    padding: 20px;
+  }
+  
+  /* Define the flip animation */
+  @keyframes flip {
+    0% {
+      transform: rotateY(0deg);
+    }
+    100% {
+      transform: rotateY(180deg);
+    }
+  }
+  
+  /* Styling for the widget content on the back face */
+  .widget-content p {
+    font-size: 16px;
+  }
+  
+  .widget-content ul {
+    list-style-type: disc;
+  }
+  
+  .widget-content li {
+    margin: 5px 0;
+  }
+  
+  .widget-content a {
+    color: var(--ou-accent-color); /* Use the accent color for links */
+    text-decoration: none;
+  }
+  
+  .widget-content a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Your existing CSS styles... */
+  
+  /* Styling for the transparent box */
+  .transparent-box {
+      background: rgba(0, 0, 0, 0.3); /* Transparent black background */
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+      color: white; /* Text color inside the transparent box */
+  }
+  
+  .transparent-box h1 {
+      font-size: 24px;
+  }
+  
+  .transparent-box p {
+      font-size: 18px;
+  }
+/* Shared styles from styles.css (if needed) */
+/* Your existing CSS styles... */
+
+/* Upcoming Events Page Specific Styles */
+.event-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.event {
+    background-color: var(--ou-secondary-color); /* Use secondary color for event items */
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+    transition: background-color 0.3s, color 0.3s;
+    cursor: pointer;
+}
+
+.event:hover {
+    background-color: var(--ou-accent-color); /* Use accent color on hover */
+    color: var(--ou-secondary-color); /* Use secondary color for text on hover */
+}
+  

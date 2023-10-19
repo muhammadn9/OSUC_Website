@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/css/upcomingevents-styles.css"
+    />
+    <script src="/js/shared-search.js"></script>
+    <!-- Include the shared search script -->
+    <title>Upcoming Events</title>
+  </head>
+
+  <body>
+    <header class="navbar">
+      <div class="logo">
+        <img
+          src="/images/oakland university logo.png"
+          alt="Logo"
+          width="auto"
+          height="60"
+        />
+      </div>
+      <nav>
+        <ul>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/html/AboutUs.html">About Us</a></li>
+          <li><a href="/html/UpcomingEvents.html">Upcoming Events</a></li>
+        </ul>
+      </nav>
+      <div class="search-bar">
+        <input type="text" id="searchInput" placeholder="Search..." />
+        <!-- Add an id for JavaScript interaction -->
+        <button id="searchButton">Search</button>
+        <!-- Add a search button -->
+      </div>
+    </header>
+    <main class="content">
+      <h1>Upcoming Events</h1>
+
+      <!-- Upcoming Events List (with searchable-item class) -->
+      <ul class="event-list">
+        <li class="event searchable-item">
+          <h3>Event 1</h3>
+          <p>Date: October 20, 2023</p>
+        </li>
+        <li class="event searchable-item">
+          <h3>Event 2</h3>
+          <p>Date: November 5, 2023</p>
+        </li>
+        <li class="event searchable-item">
+          <h3>Event 3</h3>
+          <p>Date: December 10, 2023</p>
+        </li>
+        <!-- Add more events here (with searchable-item class) -->
+      </ul>
+    </main>
+  </body>
+</html>
