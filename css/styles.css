@@ -1,0 +1,99 @@
+:root {
+  --ou-primary-color: white; /* Oakland Green */
+  --ou-secondary-color: #000000; /* Black */
+  --ou-accent-color: #d7aa3f; /* Oakland Gold */
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: burlywood; /* Change to white for a cleaner look */
+}
+
+.navbar {
+  background-color: var(--ou-primary-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.navbar .logo img {
+  margin-right: 20px;
+}
+
+.navbar nav ul {
+  list-style: none;
+  display: flex;
+}
+
+.navbar nav li {
+  margin: 0 15px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+.navbar a:hover {
+  color: var(--ou-accent-color);
+}
+
+.search-bar input[type="text"] {
+  padding: 10px;
+  border: none;
+  border-radius: 3px;
+}
+
+.content {
+  padding: 20px;
+  text-align: center;
+}
+
+/* Styling for the widget sections */
+.widget {
+  background-color: #dfa053; /* Use the accent color */
+  border: 1px solid white;
+  padding: 20px;
+  margin: 20px 0;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.widget h2 {
+  font-size: 20px;
+  margin: 0;
+  color: var(--ou-primary-color); /* Use the primary color for headings */
+}
+
+.widget p {
+  font-size: 16px;
+}
+
+.widget button {
+  background-color: var(--ou-primary-color);
+  color: black; /* Change the button text color to black */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.widget button:hover {
+  background-color: var(--ou-accent-color); /* Use the accent color on hover */
+}
+
+.widget a {
+  color: var(--ou-accent-color); /* Use the accent color for links */
+  text-decoration: none;
+}
+
+.widget a:hover {
+  text-decoration: underline;
+}
